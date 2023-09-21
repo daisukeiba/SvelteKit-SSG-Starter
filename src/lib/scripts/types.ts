@@ -19,6 +19,14 @@ export interface PostData {
 	next?: string;
 }
 
+export interface ShareData {
+	url: string;
+	text: string;
+	hash?: string;
+}
+
+export type SharePlatform = 'twitter' | 'facebook' | 'line';
+
 export interface SummariesData {
 	slug: string;
 	title: string;

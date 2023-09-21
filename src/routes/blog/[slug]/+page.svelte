@@ -1,13 +1,17 @@
 <script lang="ts">
+  import { PUBLIC_BASE_URL } from '$env/static/public';
+  import { page } from '$app/stores';
   import {
     removeHTMLTags,
     truncateString
   } from '$lib/scripts/common';
   import type {
     MetaData,
-    PostData
+    PostData,
+    ShareData
   } from '$lib/scripts/types';
   import TheMeta from '$lib/TheMeta.svelte';
+  import TheShare from '$lib/TheShare.svelte';
 
   type Data = {
     postData: PostData;
@@ -26,6 +30,11 @@
   const metaData: MetaData = {
     title,
     description
+  };
+
+  const shareData: ShareData = {
+    url: PUBLIC_BASE_URL + $page.url.pathname,
+    text: 'ブログ詳細ページのシェアテキスト',
   };
 
 </script>
@@ -47,3 +56,5 @@
   href="../{ data.postData.next }"
 >次の記事</a></p>
 {/if}
+
+<TheShare { shareData } />
