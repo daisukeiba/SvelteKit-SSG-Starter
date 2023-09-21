@@ -16,3 +16,13 @@
 />
 
 <slot />
+
+<style lang="scss">
+:global(body) {
+  font-family: $FONT_FAMILY;
+  @include responsive('PC', $MIN_WIDTH) {
+  }
+  @include responsive('SP', $MIN_WIDTH) {
+  }
+}
+</style>

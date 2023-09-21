@@ -29,7 +29,31 @@
   </ul>
 </nav>
 
-<style>
+<style lang="scss">
+  ul {
+    display: flex;
+    justify-content: center;
+  }
+  li {
+    &:not(:last-child) {
+      @include responsive('SP', $MIN_WIDTH) {
+        margin-right: math_div(10vw, $DESIGN_WIDTH_SP);
+      }
+      @include responsive('PC', $MIN_WIDTH) {
+        margin-right: 10px;
+      }
+    }
+  }
+  a {
+    color: $KEY_COLOR_1;
+    @include hover() {
+      transition: opacity 0.3s $easeInCubic;
+      &:hover {
+        opacity: 0.7;
+        text-decoration: none;
+      }
+    }
+  }
   .is-current {
     color: red;
   }

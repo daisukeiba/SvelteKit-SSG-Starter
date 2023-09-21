@@ -1,0 +1,8 @@
+// ------------------------------------------- SASS Information
+//  Name:      mixins/_math.scss
+// -----------------------------------------------------------
+@use 'sass:math';
+
+@function math_div($dividend, $divisor) {
+  @return math.div($dividend, $divisor);
+}
