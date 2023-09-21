@@ -1,8 +1,8 @@
 <script lang="ts">
-  import { PUBLIC_BASE_URL } from '$env/static/public';
+  // import { PUBLIC_BASE_URL } from '$env/static/public';
   import type { MetaData } from '$lib/scripts/types';
   import TheMeta from '$lib/TheMeta.svelte';
-  console.log({PUBLIC_BASE_URL});
+  // console.log({PUBLIC_BASE_URL});
 
   const metaData: MetaData = {
     title: 'ページタイトル ホーム',

@@ -7,7 +7,8 @@ export function load(): { navItems: NavItem[] } {
   return {
     navItems: [
       { href: '/', id: 'home', label: 'HOME' },
-      { href: '/about/', id: 'about', label: 'ABOUT' }
+      { href: '/about', id: 'about', label: 'ABOUT' },
+      { href: '/blog', id: 'blog', label: 'BLOG' }
     ]
   };
 }

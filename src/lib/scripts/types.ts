@@ -10,3 +10,16 @@ export interface NavItem {
 	id: string;
 	label: string;
 }
+
+export interface PostData {
+	slug: string;
+	title: string;
+	content: string;
+	prev?: string;
+	next?: string;
+}
+
+export interface SummariesData {
+	slug: string;
+	title: string;
+}

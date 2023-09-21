@@ -17,7 +17,7 @@
     >
       <a
         data-sveltekit-reload
-        class:is-current={ pathname === href }
+        class:is-current={ pathname === href || pathname === href + '/' }
         class="nav__link"
         href="{ href }"
         data-id="{ id }"
