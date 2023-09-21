@@ -5,7 +5,9 @@
 	"scripts": {
 		"dev": "vite dev --open",
 		"build": "vite build",
-		"preview": "vite preview",
+		"preview": "vite preview --open",
+		"stg": "vite build --mode staging",
+		"prod": "vite build --mode production",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
 		"lint": "prettier --plugin-search-dir . --check . && eslint .",
