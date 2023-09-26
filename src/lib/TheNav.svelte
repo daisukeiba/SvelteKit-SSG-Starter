@@ -55,6 +55,6 @@
     }
   }
   .is-current {
-    color: red;
+    color: $KEY_COLOR_3;
   }
 </style>

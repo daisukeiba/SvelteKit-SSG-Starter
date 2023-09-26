@@ -51,6 +51,11 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.is-openModal body {
+  overflow: hidden;
+  touch-action: none;
+}
+
 a {
   text-decoration: none;
 }
